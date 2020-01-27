@@ -78,5 +78,5 @@ function validateCourse(course){
     return Joi.validate(course,schema)
 }
 
-const port = process.env.PORT || 3000; // getting environment variable
+const port = process.env.PORT || 5000; // getting environment variable
 app.listen(port,()=>console.log(`Listening on port ${port}...`))
