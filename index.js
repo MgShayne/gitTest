@@ -1,3 +1,4 @@
+const cc = []
 const Joi = require('joi')
 const express = require('express')
 const app = express()
@@ -78,5 +79,5 @@ function validateCourse(course){
     return Joi.validate(course,schema)
 }
 
-const port = process.env.PORT || 3000; // getting environment variable
+const port = process.env.PORT || 4000; // getting environment variable
 app.listen(port,()=>console.log(`Listening on port ${port}...`))
